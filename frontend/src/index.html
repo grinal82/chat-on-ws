@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+
+    <title>chat app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./css/style.css">
+    <script src="./index.js" defer></script> -->
+</head>
+
+<body>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Pop-up window -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Введите псевдоним</h2>
+            <form id="usernameForm">
+                <input type="text" id="usernameInput" placeholder="Введите псевдоним" required>
+                <button type="submit">Продолжить</button>
+            </form>
+            <p id="popupError" class="error-message"></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-lg-12">
+                <div class="card chat-app">
+                    <div id="plist" class="people-list">
+                        <ul class="list-unstyled chat-list mt-2 mb-0">
+                        </ul>
+                    </div>
+                    <div class="chat">
+                        <div class="chat-history">
+                            <ul class="m-b-0" id="chat">
+                            </ul>
+                        </div>
+                        <div class="chat-message clearfix">
+                            <form action="">
+                                <div class="input-group mb-0">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fa fa-send"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Enter text here..."
+                                        id="chat-message">
+                                    <button id="send">Send message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
