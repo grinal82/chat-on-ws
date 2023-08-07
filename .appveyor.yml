@@ -15,7 +15,6 @@ install:
 build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
-  - cd frontend
   - npm install
   - npm run build   # команда сборки
 
