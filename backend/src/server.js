@@ -77,7 +77,6 @@ wsServer.on("connection", (ws) => {
   });
 
   ws.on("close", () => {
-    delete clients[id];
     if (ws.username) {
       // Удаляем юзернеймы при отключении
       usernames.delete(ws.username);
