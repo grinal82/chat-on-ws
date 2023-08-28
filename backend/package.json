@@ -20,6 +20,7 @@
     "ws": "^8.13.0"
   },
   "dependencies": {
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "nodemon": "^3.0.1"
   }
 }
