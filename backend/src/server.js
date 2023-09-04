@@ -16,7 +16,6 @@ const wsServer = new WS.Server({
   server,
 });
 
-const clients = {};
 const chat = [];
 const usernames = new Set();
 
