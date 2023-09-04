@@ -26,7 +26,7 @@ function hidePopup() {
 
 // Initialize WebSocket connection function
 function initializeWebSocket(username) {
-  ws = new WebSocket("ws://chat-on-ws.onrender.com");
+  ws = new WebSocket("wss://chat-on-ws.onrender.com");
 
   ws.addEventListener("open", () => {
     console.log("ws open");
